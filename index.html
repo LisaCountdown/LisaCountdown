@@ -2,6 +2,7 @@
 
 <link rel="stylesheet" href="main.css" src="main.css">
 
+
 <style>
 	.Ended {
 		background-color: #31004A;
@@ -21,6 +22,7 @@
 </style>
 
 <body class="example" >
+    <script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js"></script><script>confetti.start()</script>
     <div class="containercenter">
         <p id="demo" class="countdown"></p>
     </div>
@@ -29,7 +31,7 @@
         <p style="text-align:center">
 
             <a class="PLine ParagraphTitle">ALLES GUTE FÜR DICH</a><br /><br />
-            <a style="" class="ParagraphContent">Hey Lisa ich wollte dir mal sagen wie gern ich dich hab und welcher Tag ist besser als dein Geburtstag dafür! Als du in Japan warst haben wir uns ja leider ein wenig zestritten, weil ich eifersüchtig wurde (wegen eines Clash-Turniers of all things) und dafür will ich mich als Erstes entschuldigen. ES TUT MIR VON HERZEN LEID! So with that out of the way, hier sind ein paar Sachen die ich an dir sehr schätze: 1.Du bist sehr bodenständig und siehst dich selten als was Besseres an. 2.Du ziehst Vorhaben auch mal durch und redest nicht nur davon (E.g. Japan). 3. Das Allerwichtigste an dir ist du bist einfach du und lässt dich nicht von anderen in ein Verhaltensmuster zwängen und traust dich auch mal deine Meinung zu sagen! <br /><br /> Ich weis das ist ein bisschen cringe deswegen scroll einfach schnell weiter für mein super überraschendes und unerwartetes Geschenk!</a>
+            <a class="ParagraphContent">Hey Lisa ich wollte dir mal sagen wie gern ich dich hab und welcher Tag ist besser als dein Geburtstag dafür! Als du in Japan warst haben wir uns ja leider ein wenig zestritten, weil ich eifersüchtig wurde (wegen eines Clash-Turniers of all things) und dafür will ich mich als Erstes entschuldigen. ES TUT MIR VON HERZEN LEID! So with that out of the way, hier sind ein paar Sachen die ich an dir sehr schätze: 1.Du bist sehr bodenständig und siehst dich selten als was Besseres an. 2.Du ziehst Vorhaben auch mal durch und redest nicht nur davon (E.g. Japan). 3. Das Allerwichtigste an dir ist du bist einfach du und lässt dich nicht von anderen in ein Verhaltensmuster zwängen und traust dich auch mal deine Meinung zu sagen! <br /><br /> Ich weis das ist ein bisschen cringe deswegen scroll einfach schnell weiter für mein super überraschendes und unerwartetes Geschenk!</a>
         </p>
 
     </div>
@@ -48,10 +50,12 @@
 
 
 <script>
+        confetti.stop();
 
 window.onbeforeunload = function () {
             window.scrollTo(0, 0);
         }; 
+
 
 // Set the date we're counting down to
 var countDownDate = new Date("Jul 25, 2020 00:00:00").getTime();
@@ -82,6 +86,7 @@ var x = setInterval(function() {
 
 		document.body.classList.add("Ended");
         document.getElementById("demo").innerHTML = "HAPPY BIRTHDAY!";
+        confetti.start();
     }
 }, 1000);
 	
