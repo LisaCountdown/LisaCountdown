@@ -1,0 +1,48 @@
+body {
+	background-color: #333;
+	color: lightgray;
+	overflow:hidden
+}
+
+.countdown {
+	font-size: 10vw;
+}
+
+.containercenter {
+    min-height: 100vh;
+    position: relative }
+
+.containercenter p,innercentered {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+    }
+
+
+.ParagraphContent {
+	font-size: 3vh;
+	max-width: 80vw;
+	display: inline-block;
+	color: lightgray;
+	text-align: justify;
+	text-align-last: center;
+	padding-bottom: 2vh;
+}
+
+.CenterParagraph {
+	align-content: center;
+}
+
+.ParagraphTitle {
+	font-size: large;
+	color: #fff;
+	font-size: 7vh;
+}
+
+.PLine {
+	border-bottom: 1vh solid gray;
+	display: inline-block;
+}
